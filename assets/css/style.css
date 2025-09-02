@@ -1,0 +1,148 @@
+@charset "utf-8";
+
+/* ===============================
+Top Page
+=============================== */
+/* title */
+.top-ttl {
+    text-align: center;
+    position: relative;
+    padding: 30px 0;
+}
+
+.top-ttl span {
+    display: block;
+    font-size: 2.4rem;
+    line-height: 1.6;
+    font-weight: 500;
+}
+
+.top-ttl .en-txt {
+    font-family: "Lato", sans-serif;
+    font-size: 4.8rem;
+    font-weight: 700;
+    line-height: 1.5;
+}
+
+.top-ttl::after {
+    content: "";
+    width: 100px;
+    height: 4px;
+    background: #0C7C34;
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.top-ttl .shadow-wrap {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 20px;
+    left: 0;
+}
+
+.top-ttl .shadow-txt {
+    font-family: "Lato", sans-serif;
+    font-size: 20rem;
+    font-weight: 700;
+    color: rgba(12, 124, 52, 0.05);
+    line-height: 1.15;
+    text-align: left;
+}
+.sec-recom {
+    padding :80px 0 120px;
+    background: #fff;
+}
+.sec-recom .recom-img {
+    max-width: 1072px;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+}
+.sec-recom .recom-img img {
+  transition: 0.3s;
+}
+
+.sec-recom .recom-img img:hover {
+  transform: scale(1.06);
+}
+
+.sec-campaign {
+    padding :120px 0;
+    background: #E5E9EA;
+}
+.sec-campaign .campaign-slider .campaign-item {
+    border: 1px solid #fff;
+    width: 780px;
+    background: #fff;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    margin: 0 10px;
+}
+.sec-campaign .campaign-slider .campaign-item.slick-slide {
+    padding: 30px 30px 50px;
+} 
+.sec-campaign .campaign-slider .campaign-item .campaign-row {
+    display: grid;
+    grid-template-columns: 176px auto;
+    gap: 20px;
+    text-decoration: none;
+}
+.sec-campaign .campaign-slider .campaign-item .img-wrap {
+    max-width: 176px;
+    margin: 0 auto;;
+}                                                                                                                    
+.sec-campaign .slick-dots {
+    bottom: -50px;
+}   
+.sec-campaign .slick-dots li button:before {
+    font-size: 12px;
+    color: #0C7C34;
+    opacity: 1;
+}
+.sec-campaign .slick-dots li.slick-active button:before {
+    color: #0C7C34;
+    opacity: 1;
+}
+.sec-campaign .slick-arrow {
+    width: 40px;
+    height: 40px;
+    background: #0C7C34;
+    border-radius: 50%;
+    z-index: 2;
+}
+.sec-campaign .slick-arrow:before {
+    font-size: 20px;
+    color: #fff;
+    opacity: 1;
+}
+.sec-campaign .slick-prev {
+    left: -20px;
+}
+.sec-campaign .slick-next {
+    right: -20px;
+}  
+@media screen and (max-width: 768px) {
+
+    .top-ttl span {
+        display: block;
+        font-size: 1.5rem;
+    }
+
+    .top-ttl .en-txt {
+        font-size: 3rem;
+        line-height: 1.2;
+    }
+
+    .top-ttl .shadow-wrap {
+        overflow: hidden;
+        top: 30px;
+    }
+
+    .top-ttl .shadow-txt {
+        font-size: 8rem;
+    }
+}

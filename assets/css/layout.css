@@ -1,0 +1,390 @@
+@charset "utf-8";
+/* ===============================
+Header
+=============================== */
+.header {
+    position: relative;
+}
+.h-logo {
+    display: flex;
+    width: calc(100% - 85px);
+    padding: 28px 0 0 15px;
+
+    align-items: center;
+}
+.h-txt {
+    margin-left: 10px;
+
+    font-family: "ヒラギノ角ゴ Pro W3","HiraKakuPro-W3";
+    font-size: 18px;
+
+    color: #fff;
+}
+.mv-main {
+    background: url("../img/common/mv_pc.jpg") no-repeat center center;
+    background-size: cover;
+}
+.mv-txt {
+    /* padding: 169px 0 280px 0; */
+    /* padding:90px 0 220px 0; */
+    padding: 140px 0 260px 0;
+
+    text-align: center;
+}
+.txt-others {
+    font-family: "oswald", sans-serif;
+    font-size: 100px;
+    font-weight: 500;
+    line-height: 1;
+
+    letter-spacing: .2px;
+
+    color: #fff;
+}
+.txt-others-jp {
+    margin-top: 10px;
+
+    font-family: "noto-sans-cjk-jp", sans-serif;
+    font-size: 26px;
+    font-weight: 500;
+
+    letter-spacing: 4.8px;
+
+    color: #fff;
+}
+@media screen and (max-width: 768px) {
+    .mv-main {
+        background-position: 54% 100%;
+    }
+    .h-logo {
+        display: block;
+        width: calc(100% - 60px);
+        padding: 20px 0 0 0;
+    }
+    .h-logo img {
+        max-width: 210px;
+    }
+    .h-txt {
+        margin-top: 5px;
+
+        font-size: 13px;
+    }
+    .mv-txt {
+        padding: 90px 0 200px 0;
+    }
+    .txt-others {
+        font-size: 50px;
+    }
+    .txt-others-jp {
+        font-size: 14px;
+
+        letter-spacing: 4px;
+    }
+}
+/* ===============================
+Menu
+=============================== */
+.gnav {
+    position: absolute;
+    top: 20px;
+    right: 15px;
+
+    width: 70px;
+    height: 70px;
+
+    border: 2px solid #fff;
+    background: #990100;
+}
+.gnav .menu {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    width: 40px;
+    height: 33px;
+
+    transform: translate(-50%, -50%);
+}
+.gnav .menu .line {
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    display: block;
+    width: 40px;
+    height: 3px;
+
+    transition: all .3s ease-out;
+
+    background: #fff;
+}
+
+.gnav .menu .line_02 {
+    top: 15px;
+}
+
+.gnav .menu .line_03 {
+    top: 30px;
+}
+
+.gnav .is-active .line_01 {
+    top: 8px;
+
+    width: 40px;
+
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+}
+
+.gnav .is-active .line_02 {
+    opacity: 0;
+}
+
+.gnav .is-active .line_03 {
+    top: 8px;
+
+    width: 40px;
+
+    -webkit-transform: rotate(135deg);
+            transform: rotate(135deg);
+}
+@media screen and (max-width: 768px) {
+    .gnav {
+        top: 25px;
+        right: 0;
+
+        width: 50px;
+        height: 50px;
+    }
+    .gnav .menu {
+        width: 25px;
+        height: 24px;
+    }
+    .gnav .menu .line {
+        width: 25px;
+    }
+    .gnav .menu .line_02 {
+        top: 10px;
+    }
+    .gnav .menu .line_03 {
+        top: 20px;
+    }
+}
+/* ===============================
+Navigation
+=============================== */
+@media screen and (max-width: 768px) {
+}
+/* ===============================
+breadcrumb
+=============================== */
+@media screen and (max-width: 768px) {
+}
+/* ===============================
+Page Top
+=============================== */
+@media screen and (max-width: 768px) {
+}
+/* ===============================
+Footer
+=============================== */
+.footer {
+    padding: 100px 0;
+}
+.ft-logo {
+    display: -webkit-box;
+    display:    -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display:         flex;
+
+    align-items: center;
+    justify-content: center;
+}
+.ft-logo-txt {
+    margin-left: 10px;
+
+    font-size: 20px;
+    font-weight: 500;
+
+    color: #fff;
+}
+.social-icon ul {
+    display: flex;
+    margin: 15px 0 30px 0;
+
+    text-align: center;
+
+    justify-content: center;
+}
+.social-icon ul li {
+    padding: 0 10px;
+}
+.ft-gp {
+    margin: 0 0 18px 0;
+}
+.ft-gp .col2 {
+    padding: 0 20px;
+}
+.ft-boxL,
+.ft-boxR {
+    margin-bottom: 30px;
+}
+.copy-right {
+    font-size: 12px;
+    font-weight: bold;
+
+    text-align: center;
+
+    color: #fff;
+}
+.copy-right .ft-en {
+    font-family: "Arial", sans-serif;
+}
+.fb-root {
+    /*  */
+}
+.fb_iframe_widget span {
+    display: block !important;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 768px) {
+    .footer {
+        padding: 50px 0;
+    }
+    .ft-logo {
+        flex-wrap: wrap;
+    }
+    .ft-logo-txt {
+        margin-top: 5px;
+
+        font-size: 15px;
+    }
+    .social-icon ul {
+        margin: 15px 0;
+    }
+    .social-icon ul li {
+        padding: 0;
+    }
+    .ft-boxL,
+    .ft-boxR {
+        margin-bottom: 20px;
+    }
+    .ft-boxL {
+        float: left;
+        width: 48%;
+    }
+    .ft-boxR {
+        float: right;
+        width: 48%;
+    }
+    .ft-gp .col2 {
+        padding: 0;
+    }
+    .fb_iframe_widget span {
+        height: 300px !important;
+    }
+    .fb_iframe_widget iframe {
+        height: 300px !important;
+    }
+}
+@media screen and (max-width: 480px) {
+    .ft-boxL,
+    .ft-boxR {
+        float: none;
+        width: 100%;
+    }
+}
+
+/* ===============================
+Section container
+=============================== */
+.container {
+    /* width: 1080px; */
+    max-width: 1140px;
+    padding: 0 30px;
+    margin: 0 auto;
+}
+.m-w1200 {
+    max-width: 1260px;
+    padding: 0 30px;
+    margin: 0 auto;
+}
+.m-w920 {
+    /* width: 920px; */
+    max-width: 980px;
+    padding: 0 30px;
+    margin: 0 auto;
+}
+.m-w800 {
+    max-width: 800px;
+    margin: 0 auto;
+}
+section {
+    padding: 150px 0;
+}
+.wrapper section:last-child {
+    padding: 150px 0 70px 0;
+}
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 0 20px;
+    }
+    .m-w1200 {
+        padding: 0 20px;
+    }
+    .m-w920 {
+        padding: 0 20px;
+    }
+    section {
+        padding: 80px 0;
+    }
+}
+/* ===============================
+Column Group
+=============================== */
+.col-gp {
+    display: -webkit-box;
+    display:    -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display:         flex;
+
+    flex-wrap: wrap;
+}
+.col-center {
+    justify-content: center;
+}
+.col1 {
+    width: 100%;
+}
+.col2 {
+    width: 50%;
+}
+.col3 {
+    width: 33.33%;
+}
+.col4 {
+    width: 25%;
+}
+.col1,
+.col2,
+.col3,
+.col4 {
+    padding: 0 10px;
+}
+@media screen and (max-width: 768px) {
+    .col1-sp {
+        width: 100%;
+    }
+    .col2-sp {
+        width: 50%;
+    }
+    .col3-sp {
+        width: 33.33%;
+    }
+    .col4-sp {
+        width: 25%;
+    }
+}
