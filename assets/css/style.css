@@ -1,3 +1,4 @@
+
 @charset "utf-8";
 
 /* ===============================
@@ -105,7 +106,6 @@ Top Page
     width: 176px;
     max-width: 176px;
     margin: 0 auto;
-    ;
 }
 
 .sec-campaign .campaign-item .txt-wrap {
@@ -189,7 +189,8 @@ Top Page
 }
 
 .sec-container {
-    max-width: 1215px;
+    max-width: 1214px;
+    padding: 0 15px;
     margin: 0 auto;
 }
 
@@ -270,27 +271,31 @@ Top Page
     padding: 15px 0 40px
 }
 
-.sec-res .res-left .res-more {
+.more-btn {
+    max-width: 365px;
+    margin: 0 auto;
     background-color: #0C7C34;
     text-decoration: none;
     text-align: center;
     padding: 15px 40px;
     border-radius: 6px;
-    transition: all 0.3s;
+    position: relative;
+    top: 0;
+    left: 0;
+    transition: all 0.3s ease;
     box-shadow: 6px 6px 0px 0px rgba(33, 33, 33, 0.15);
     -webkit-box-shadow: 6px 6px 0px 0px rgba(33, 33, 33, 0.15);
     -moz-box-shadow: 6px 6px 0px 0px rgba(33, 33, 33, 0.15);
 }
 
-.sec-res .res-left .res-more span {
-color: #fff;
- font-size: 1.8rem;
+.more-btn span {
+    color: #fff;
+    font-size: 1.8rem;
     line-height: 1.6;
     position: relative;
-
 }
 
-.sec-res .res-left .res-more span::after {
+.more-btn span::after {
     content: "";
     background: url(/assets/img/top/white_arrow.png) no-repeat;
     background-size: contain;
@@ -300,13 +305,298 @@ color: #fff;
     right: -20px;
     top: 57%;
     transform: translateY(-50%);
+    transition: transform 0.3s ease;
 }
 
-.sec-res .res-left .res-more:hover {
+.more-btn:hover {
     background-color: #0B983D;
-    box-shadow: none;
+    top: 6px;
+    left: 6px;
+    box-shadow: 0 0 0 0 rgba(33, 33, 33, 0.15);
 }
 
+/* Magazine Section */
+.sec-magazine {
+    padding: 120px 0;
+    background-color: #E5E9EA;
+}
+
+.sec-magazine .magazine-wrapper {
+    position: relative;
+    margin-bottom: 60px;
+}
+.sec-magazine .top-blk {
+    max-width: 918px;
+    margin: 55px auto 35px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px;
+}
+.sec-magazine .top-blk .top-item .txt-shop {
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 1.5;
+    padding: 15px 0 10px;
+}
+.sec-magazine .magazine-slider {
+    max-width: 1184px;
+    margin: 0 auto;
+}
+.sec-magazine .magazine-slider .magazine-item {
+    margin: 0 14px;
+    max-width: 376px;
+}
+.sec-magazine .magazine-more-wrap {
+    text-align: center;
+}
+.magazine-info {
+    padding: 0 5px;
+}
+
+.magazine-shop {
+    font-size: 1.4rem;
+    font-weight: 500;
+    margin-bottom: 8px;
+    line-height: 1.5;
+}
+
+.magazine-add {
+    font-size: 1.3rem;
+    color: #666;
+}
+
+
+.sec-maintain {
+    padding: 120px 0;
+    background: #fff;
+}
+.sec-maintain .maintain-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 31px;
+    margin-bottom: 60px;
+}
+.sec-maintain .maintain-item .maintain-cat {
+    display: inline-block;
+    border: 1px solid #226ACC;
+    min-width: 90px;
+    padding: 10px;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #226ACC;
+    text-align: center;
+    line-height: 1.5;
+    margin: 20px 0 10px
+}
+.sec-maintain .maintain-item .maintain-ttl {
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+.sec-maintain .maintain-item .maintain-subttl {
+    font-size: 1.4rem;
+    color: #5F5F5F;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+.sec-maintain .maintain-item .maintain-txt {
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.6;
+}
+
+/* Service Section */
+.sec-service {
+    padding: 120px 0;
+    background: #E5E9EA;
+}
+.sec-service .sec-container {
+    max-width: 1214px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+.sec-service .service-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 28px;
+    margin-top: 60px;
+}
+.sec-service .service-item {
+    background: #ffffff;
+    text-align: center;
+    padding: 40px 21px;
+}
+.sec-service .service-title {
+    font-size: 2.8rem;
+    font-weight: 700;
+    margin-bottom: 24px;
+    line-height: 1.6;
+}
+.sec-service .service-img {
+    max-width: 273px;
+    margin: 0 auto;
+}
+.sec-service .service-subtitle {
+    font-size: 2.2rem;
+    font-weight: 500;
+    margin: 20px 0 15px;
+    line-height: 1.6;
+}
+.sec-service .service-desc {
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.sec-service .view-more {
+    text-align: center;
+    padding: 10px 0;
+}
+.sec-service .view-more a {
+    color: #2393E5;
+    text-decoration: none;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.5;
+    padding: 8px 16px;
+    display: inline-block;
+    position: relative;
+}
+
+/* @media screen and (max-width: 1024px) {
+    .sec-service .service-list {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
+}
+@media screen and (max-width: 600px) {
+    .sec-service {
+        padding: 60px 0;
+    }
+    .sec-service .service-list {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+    .sec-service .service-title {
+        font-size: 2rem;
+    }
+    .sec-service .service-subtitle {
+        font-size: 1.6rem;
+    }
+}
+
+/* Point Section */
+.sec-point {
+    padding: 120px 0;
+    background: #fff;
+}
+
+.point-ttl {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.point-ttl .sub-ttl {
+    display: block;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+.point-ttl .main-ttl {
+    font-size: 3.6rem;
+    font-weight: 700;
+}
+
+.point-desc {
+    text-align: center;
+    font-size: 1.6rem;
+    line-height: 1.8;
+    margin-bottom: 60px;
+}
+
+.point-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 26px 28px;
+    margin: 0 auto 60px;
+    padding: 0 20px;
+}
+
+.point-item {
+    background: #E7F3E7;
+    border: 1px solid #0C7C34;
+    padding: 30px 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.point-icon {
+    width: 80px;
+    height: 80px;
+    background: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.point-icon img {
+    width: 40px;
+    height: 40px;
+}
+
+.point-num {
+    color: #0C7C34;
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+}
+
+.point-name {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.point-text {
+    font-size: 1.4rem;
+    line-height: 1.7;
+}
+
+@media screen and (max-width: 1024px) {
+    .point-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .point-ttl .main-ttl {
+        font-size: 2.8rem;
+    }
+    .point-desc {
+        font-size: 1.4rem;
+        text-align: left;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .sec-point {
+        padding: 60px 0;
+    }
+    .point-list {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    .point-item {
+        padding: 20px 15px;
+    }
+} 
 @media screen and (max-width: 768px) {
 
     .top-ttl span {

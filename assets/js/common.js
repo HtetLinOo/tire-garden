@@ -10,6 +10,7 @@ jQuery(function($) {
     });
 
     $('.sec-campaign .campaign-item').matchHeight();
+    $('.sec-service .service-title').matchHeight();
 });
 
 
