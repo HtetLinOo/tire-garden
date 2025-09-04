@@ -8,11 +8,13 @@ function campaignSlider() {
         // autoplay: true,
         autoplaySpeed: 0,
         speed: 3000,
-        arrows: false,
+        // arrows: true,
         pauseOnHover: false,
         pauseOnFocus: false,
         centerMode: true,
         variableWidth: true,
+         prevArrow: $('.prev-cus'),
+        nextArrow: $('.next-cus'),
         responsive: [
             {
                 breakpoint: 769,

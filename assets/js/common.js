@@ -8,6 +8,8 @@ jQuery(function($) {
             $('.anchor').click(scroll_func);
         });
     });
+
+    $('.sec-campaign .campaign-item').matchHeight();
 });
 
 
