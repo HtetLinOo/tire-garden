@@ -585,6 +585,211 @@ Top Page
     }
 }
 
+/* Pit Service Section */
+.sec-pitservice {
+    padding: 120px 0;
+    background: #fff;
+    position: relative;
+}
+.sec-pitservice .pitservice-content {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    margin-bottom: 120px;
+}
+.sec-pitservice .pitservice-main {
+    position: relative;
+}
+
+.sec-pitservice .pitservice-img {
+    width: 100%;
+    max-width: 1072px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.sec-pitservice .pitservice-img img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.sec-pitservice .pitservice-text {
+    max-width: 500px;
+    padding: 50px 50px 0;
+    position: absolute;
+    background: #ffffff;
+    bottom: -2px;
+}
+.sec-pitservice .pitservice-main:nth-child(odd) .pitservice-text {
+  left: 0;
+  right: auto; 
+}
+
+
+.sec-pitservice .pitservice-main:nth-child(even) .pitservice-text {
+  right: 0;
+  left: auto; 
+}
+
+.sec-pitservice .pitservice-text h4 {
+    font-size: 2.4rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.sec-pitservice .pitservice-text p {
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.sec-pitservice .view-more {
+    text-align: right;
+}
+
+.sec-pitservice .view-more a {
+    color: #226ACC;
+    text-decoration: none;
+    font-size: 1.4rem;
+}
+
+.sec-pitservice .safety-blk .card {
+    border: 2px solid #0C7C34;
+    border-radius: 30px;
+    background: #F2FAF5;
+    padding: 45px;
+    display: flex;
+    gap: 85px;
+}
+.sec-pitservice .safety-blk .card .left {
+    width: 53%;
+    max-width: 571px;
+}
+.sec-pitservice .safety-blk .card .right {
+    width: 47%;
+    max-width: 437px;
+}
+.sec-pitservice .safety-blk .card-ttl {
+    font-size: 6rem;
+    font-weight: 700;
+    color: #0C7C34;
+    line-height: 1.2;
+    letter-spacing: 6px;
+}
+.sec-pitservice .safety-blk .card-ttl p {
+    position: relative;
+    font-size: 2.2rem;
+    font-weight: 700;
+    line-height: 1.6;
+    padding: 10px 10px 20px;
+    color: #212121;
+    letter-spacing: 0;
+}
+.sec-pitservice .safety-blk .card-ttl p::after {
+    content: "";
+    position: absolute;
+    background: url(/assets/img/top/line_arrow.png) no-repeat;
+    background-size: contain;
+    width: 386px;
+    height: 14px;
+    left: 0;
+    bottom: -5px;
+}
+.sec-pitservice .safety-blk .card-row {
+    margin: 30px 0 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+.sec-pitservice .safety-blk .card-tire {
+    max-width: 280px;
+    border: 1px solid #8B8B8B;
+    border-radius: 10px;
+    background: #ffffff;
+    padding: 20px;
+}
+.sec-pitservice .safety-blk .card-tire h4 {
+    font-size: 2.2rem;
+    font-weight: 700;
+    line-height: 1.6;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.sec-pitservice .safety-blk .card-tire ul {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.sec-pitservice .safety-blk .card-tire ul li {
+    width: 100%;
+    max-width: 238px;
+    margin: 0 auto;
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 1.6;
+    background: #DBEAED;
+    border-radius: 16px;
+    padding: 3px;
+    text-align: center;
+}
+.sec-pitservice .safety-blk .right-box-row {
+    display: flex;
+    flex-direction: column;
+    gap: 11px;
+}
+.sec-pitservice .safety-blk .right-box-row p {
+    width: 100%;
+    max-width: 280px;
+    border: 1px solid #8B8B8B;
+    background: #ffffff;
+    border-radius: 10px;
+    padding: 15px;
+    font-size: 2.2rem;
+    font-weight: 700;
+    line-height: 1.6;
+    text-align: center;
+}
+.sec-pitservice .safety-blk .right .img {
+    max-width: 437px;
+
+}
+.sec-pitservice .safety-blk .left .card-txt {
+    display: flex;
+    gap: 20px;
+    padding: 5px 30px 5px 35px;
+    position: relative;
+    justify-content: space-between;
+}
+.sec-pitservice .safety-blk .left .card-txt::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: url(/assets/img/top/left_bracket.png) no-repeat;
+    background-size: 100% 100%;
+    width: 11px;
+    height: 100%;
+}
+.sec-pitservice .safety-blk .left .card-txt::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: url(/assets/img/top/right_bracket.png) no-repeat;
+    background-size: 100% 100%;
+    width: 11px;
+    height: 100%;
+}
+.sec-pitservice .safety-blk .left .card-txt .img {
+    max-width: 94px;
+}
+.sec-pitservice .safety-blk .left .card-txt p {
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 1.6;
+}
 @media screen and (max-width: 600px) {
     .sec-point {
         padding: 60px 0;
