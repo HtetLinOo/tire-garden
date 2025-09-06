@@ -1,4 +1,3 @@
-
 @charset "utf-8";
 
 /* ===============================
@@ -52,6 +51,49 @@ Top Page
     line-height: 1.15;
     text-align: left;
 }
+.sec-mv {
+    padding: 40px 0 80px 0;
+}
+.sec-mv .mv-blk {
+    position: relative;
+}
+
+.sec-mv .mv-blk .mv-img img{
+    height: 100%;
+}
+.sec-mv .mv-blk .mv-txt-blk {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    max-width: 624px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+.sec-mv .mv-blk .mv-txt {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.sec-mv .mv-blk .mv-txt h3 {
+    font-size: 4.8rem;
+    font-weight: 500;
+    color: #fff;
+    line-height: 1.5;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #fff;
+}
+.sec-mv .mv-blk .mv-txt p {
+    font-size: 2rem;
+    font-weight: 500;
+    color: #fff;
+    line-height: 1.5;
+}
+
 
 .sec-recom {
     padding: 80px 0 120px;
@@ -325,6 +367,7 @@ Top Page
     position: relative;
     margin-bottom: 60px;
 }
+
 .sec-magazine .top-blk {
     max-width: 918px;
     margin: 55px auto 35px;
@@ -332,23 +375,28 @@ Top Page
     grid-template-columns: repeat(2, 1fr);
     gap: 32px;
 }
+
 .sec-magazine .top-blk .top-item .txt-shop {
     font-size: 1.6rem;
     font-weight: 500;
     line-height: 1.5;
     padding: 15px 0 10px;
 }
+
 .sec-magazine .magazine-slider {
     max-width: 1184px;
     margin: 0 auto;
 }
+
 .sec-magazine .magazine-slider .magazine-item {
     margin: 0 14px;
     max-width: 376px;
 }
+
 .sec-magazine .magazine-more-wrap {
     text-align: center;
 }
+
 .magazine-info {
     padding: 0 5px;
 }
@@ -370,12 +418,14 @@ Top Page
     padding: 120px 0;
     background: #fff;
 }
+
 .sec-maintain .maintain-list {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 31px;
     margin-bottom: 60px;
 }
+
 .sec-maintain .maintain-item .maintain-cat {
     display: inline-block;
     border: 1px solid #226ACC;
@@ -388,18 +438,21 @@ Top Page
     line-height: 1.5;
     margin: 20px 0 10px
 }
+
 .sec-maintain .maintain-item .maintain-ttl {
     font-size: 1.6rem;
     font-weight: 500;
     line-height: 1.6;
     margin-bottom: 10px;
 }
+
 .sec-maintain .maintain-item .maintain-subttl {
     font-size: 1.4rem;
     color: #5F5F5F;
     font-weight: 400;
     margin-bottom: 10px;
 }
+
 .sec-maintain .maintain-item .maintain-txt {
     font-size: 1.4rem;
     font-weight: 500;
@@ -411,38 +464,45 @@ Top Page
     padding: 120px 0;
     background: #E5E9EA;
 }
+
 .sec-service .sec-container {
     max-width: 1214px;
     margin: 0 auto;
     padding: 0 20px;
 }
+
 .sec-service .service-list {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 28px;
     margin-top: 60px;
 }
+
 .sec-service .service-item {
     background: #ffffff;
     text-align: center;
     padding: 40px 21px;
 }
+
 .sec-service .service-title {
     font-size: 2.8rem;
     font-weight: 700;
     margin-bottom: 24px;
     line-height: 1.6;
 }
+
 .sec-service .service-img {
     max-width: 273px;
     margin: 0 auto;
 }
+
 .sec-service .service-subtitle {
     font-size: 2.2rem;
     font-weight: 500;
     margin: 20px 0 15px;
     line-height: 1.6;
 }
+
 .sec-service .service-desc {
     font-size: 1.6rem;
     font-weight: 400;
@@ -450,10 +510,12 @@ Top Page
     margin-bottom: 20px;
     text-align: center;
 }
+
 .sec-service .view-more {
     text-align: center;
     padding: 10px 0;
 }
+
 .sec-service .view-more a {
     color: #2393E5;
     text-decoration: none;
@@ -579,6 +641,7 @@ Top Page
     .point-ttl .main-ttl {
         font-size: 2.8rem;
     }
+
     .point-desc {
         font-size: 1.4rem;
         text-align: left;
@@ -591,12 +654,14 @@ Top Page
     background: #fff;
     position: relative;
 }
+
 .sec-pitservice .pitservice-content {
     display: flex;
     flex-direction: column;
     gap: 50px;
     margin-bottom: 120px;
 }
+
 .sec-pitservice .pitservice-main {
     position: relative;
 }
@@ -621,15 +686,16 @@ Top Page
     background: #ffffff;
     bottom: -2px;
 }
+
 .sec-pitservice .pitservice-main:nth-child(odd) .pitservice-text {
-  left: 0;
-  right: auto; 
+    left: 0;
+    right: auto;
 }
 
 
 .sec-pitservice .pitservice-main:nth-child(even) .pitservice-text {
-  right: 0;
-  left: auto; 
+    right: 0;
+    left: auto;
 }
 
 .sec-pitservice .pitservice-text h4 {
@@ -663,14 +729,17 @@ Top Page
     display: flex;
     gap: 85px;
 }
+
 .sec-pitservice .safety-blk .card .left {
     width: 53%;
     max-width: 571px;
 }
+
 .sec-pitservice .safety-blk .card .right {
     width: 47%;
     max-width: 437px;
 }
+
 .sec-pitservice .safety-blk .card-ttl {
     font-size: 6rem;
     font-weight: 700;
@@ -678,6 +747,7 @@ Top Page
     line-height: 1.2;
     letter-spacing: 6px;
 }
+
 .sec-pitservice .safety-blk .card-ttl p {
     position: relative;
     font-size: 2.2rem;
@@ -687,6 +757,7 @@ Top Page
     color: #212121;
     letter-spacing: 0;
 }
+
 .sec-pitservice .safety-blk .card-ttl p::after {
     content: "";
     position: absolute;
@@ -697,12 +768,14 @@ Top Page
     left: 0;
     bottom: -5px;
 }
+
 .sec-pitservice .safety-blk .card-row {
     margin: 30px 0 20px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 10px;
 }
+
 .sec-pitservice .safety-blk .card-tire {
     max-width: 280px;
     border: 1px solid #8B8B8B;
@@ -710,6 +783,7 @@ Top Page
     background: #ffffff;
     padding: 20px;
 }
+
 .sec-pitservice .safety-blk .card-tire h4 {
     font-size: 2.2rem;
     font-weight: 700;
@@ -717,11 +791,13 @@ Top Page
     margin-bottom: 10px;
     text-align: center;
 }
+
 .sec-pitservice .safety-blk .card-tire ul {
     display: flex;
     flex-direction: column;
     gap: 5px;
 }
+
 .sec-pitservice .safety-blk .card-tire ul li {
     width: 100%;
     max-width: 238px;
@@ -734,11 +810,13 @@ Top Page
     padding: 3px;
     text-align: center;
 }
+
 .sec-pitservice .safety-blk .right-box-row {
     display: flex;
     flex-direction: column;
     gap: 11px;
 }
+
 .sec-pitservice .safety-blk .right-box-row p {
     width: 100%;
     max-width: 280px;
@@ -751,10 +829,12 @@ Top Page
     line-height: 1.6;
     text-align: center;
 }
+
 .sec-pitservice .safety-blk .right .img {
     max-width: 437px;
 
 }
+
 .sec-pitservice .safety-blk .left .card-txt {
     display: flex;
     gap: 20px;
@@ -762,6 +842,7 @@ Top Page
     position: relative;
     justify-content: space-between;
 }
+
 .sec-pitservice .safety-blk .left .card-txt::before {
     content: "";
     position: absolute;
@@ -772,6 +853,7 @@ Top Page
     width: 11px;
     height: 100%;
 }
+
 .sec-pitservice .safety-blk .left .card-txt::after {
     content: "";
     position: absolute;
@@ -782,26 +864,349 @@ Top Page
     width: 11px;
     height: 100%;
 }
+
 .sec-pitservice .safety-blk .left .card-txt .img {
     max-width: 94px;
 }
+
 .sec-pitservice .safety-blk .left .card-txt p {
     font-size: 1.8rem;
     font-weight: 500;
     line-height: 1.6;
 }
+
+.sec-shop {
+    padding: 120px 0;
+    background: #fff;
+
+}
+.sec-shop .area-tab {
+    padding-bottom: 120px;
+}
+.sec-shop .area-tab .tab-box {
+    margin-bottom: 60px;
+}
+
+.sec-shop .area-tab .tab-nav {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.sec-shop .area-tab .tab-nav .tab-ttl {
+    width: 100%;
+    max-width: 220px;
+    padding: 9px;
+    border: 2px solid #B4B4B4;
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #B4B4B4;
+    line-height: 1.6;
+    border-radius: 25px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.sec-shop .area-tab .tab-nav .tab-ttl.active {
+    border: 2px solid #0C7C34;
+    color: #0C7C34;
+}
+
+.sec-shop .area-detail-list {
+    margin: 0 0 30px;
+    text-align: center;
+    border-bottom: 2px solid #07411C;
+}
+
+.sec-shop .area-detail-list>li {
+    width: 100%;
+    max-width: 137px;
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 1.6;
+    background: #f3f3f3;
+    padding: 7px 20px;
+    display: inline-block;
+    position: relative;
+    color: #B4B4B4;
+    border-top: 1px solid #B4B4B4;
+    border-left: 1px solid #B4B4B4;
+    border-right: 1px solid #B4B4B4;
+    border-radius: 4px 4px 0 0;
+    margin: 0 4px;
+    cursor: pointer;
+}
+
+.sec-shop .area-detail-list>li.active,
+.sec-shop .area-detail-list>li:hover {
+    padding-top: 8px;
+    background: #0C7C34;
+    color: #fff;
+    border-top: 2px solid #07411C;
+    border-left: 2px solid #07411C;
+    border-right: 2px solid #07411C
+}
+
+.sec-shop .area-body .shop-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px 30px;
+}
+.sec-shop .area-body .shop-item {
+    display: flex;
+    gap: 20px;
+    padding: 20px 0;
+    border-bottom: 1px dashed #BEBEBE;
+}
+.sec-shop .area-body .shop-item .left {
+    display: flex;
+    gap: 20px;
+}
+.sec-shop .area-body .shop-item .left .img {
+    width: 100%;
+    max-width: 126px;
+}
+.sec-shop .area-body .date-box .date {
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.6;
+}
+.sec-shop .area-body .date-box .cat {
+    display: block;
+    border: 1px solid #226ACC;
+    min-width: 90px;
+    padding: 5px;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #226ACC;
+    text-align: center;
+    line-height: 1.5;
+    margin: 10px 0;
+}
+.sec-shop .app-blk {
+    border: 1px solid #E5E5E5;
+    background: #FAFAFA;
+    padding: 74px;
+    margin-bottom: 120px;
+}
+.sec-shop .area-body .txt-box {
+    max-width: 320px;
+}
+.sec-shop .area-body .txt-box.new {
+    position: relative;
+    /* padding-left: 35px; */
+}
+.sec-shop .area-body .txt-box.new::before {
+    content: "NEW";
+    display: inline-block;
+    font-family: "Lato", sans-serif;
+    font-size: 1.1rem;
+    font-weight: 700;
+    padding: 2px;
+    border-radius: 8px;
+    background: #FF0000;
+    color: #ffffff;
+    min-width: 40px;
+    text-align: center;
+}
+.sec-shop .area-body .txt-box .txt {
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 1.6;
+}
+.sec-shop .area-body .txt-box.new .txt {
+    display: inline;
+}
+.sec-shop .area-body .txt-box .txt-name {
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.6;
+    margin-top: 10px;
+    text-align: right;
+}
+.sec-shop .app-card {
+    display: flex;
+    gap: 33px;
+    justify-content: space-between;
+}
+
+.sec-shop .logo-blk {
+    display: flex;
+    gap: 28px;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.sec-shop .logo-blk .app-ttl {
+    max-width: 470px;
+    font-size: 3.6rem;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.sec-shop .app-left .app-txt {
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.5;
+    margin-bottom: 35px;
+}
+
+.sec-shop .app-logo {
+    max-width: 178px;
+}
+
+.sec-shop .app-btns {
+    display: flex;
+    gap: 50px;
+}
+
+.sec-shop .app-btns p {
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.sec-shop .app-btns .ios img {
+    max-width: 163px;
+}
+
+.sec-shop .app-btns .android img {
+    max-width: 202.5px;
+}
+
+.sec-shop .app-card .app-right {
+    max-width: 217px;
+    position: relative;
+}
+
+.sec-shop .app-card .app-right .circle-row {
+    display: flex;
+    gap: 10px;
+    position: absolute;
+    right: 115px;
+    bottom: -20px;
+}
+
+.sec-shop .app-card .app-right .circle {
+    background: #CC3333;
+    border-radius: 50%;
+    width: 130px;
+    height: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sec-shop .app-card .app-right .circle p {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #fff;
+    text-align: center;
+    line-height: 1.2;
+}
+
+.sec-shop .mail-blk {
+    max-width: 1072px;
+    margin: 0 auto 60px;
+    border-top: 1px solid #0C7C34;
+    border-bottom: 1px solid #0C7C34;
+    padding: 30px 55px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.sec-shop .mail-blk .mail-left {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+
+.sec-shop .mail-blk .mail-logo {
+    display: flex;
+    gap: 17px;
+    align-items: center;
+}
+
+.sec-shop .mail-blk .mail-img {
+    max-width: 80px;
+}
+
+.sec-shop .mail-blk .mail-logo-ttl {
+    font-size: 3.6rem;
+    font-weight: 700;
+    line-height: 1.6;
+}
+
+.sec-shop .mail-blk .mail-txt {
+    max-width: 247px;
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+.sec-shop .mail-blk .mail-right {
+    width: 283px;
+}
+
+.sec-shop .mail-blk .mail-right .email-btn {
+    border: 1px solid #707070;
+    font-size: 1.6rem;
+    font-weight: 700;
+    line-height: 1.6;
+    padding: 15px;
+}
+
+.sec-shop .manage-blk .manage-btn-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 33px;
+}
+
+.sec-shop .manage-blk .manage-btn {
+    background: #0C7C34;
+    padding: 40px 30px 40px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sec-shop .manage-blk .manage-btn .img {
+    max-width: 36px;
+}
+
+.sec-shop .manage-blk .manage-btn .left p {
+    font-size: 1.6rem;
+    color: #fff;
+    font-weight: 400;
+    line-height: 1.625;
+}
+
+.sec-shop .manage-blk .manage-btn .left .sub-ttl {
+    font-size: 2.2rem;
+    color: #fff;
+    font-weight: 700;
+    line-height: 1.6;
+}
+
 @media screen and (max-width: 600px) {
     .sec-point {
         padding: 60px 0;
     }
+
     .point-list {
         grid-template-columns: 1fr;
         gap: 20px;
     }
+
     .point-item {
         padding: 20px 15px;
     }
-} 
+}
+
 @media screen and (max-width: 768px) {
 
     .top-ttl span {
