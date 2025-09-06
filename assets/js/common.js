@@ -63,6 +63,28 @@ $(document).ready(function () {
   }, 300);
 });
 
+//Top Page Tab
+$(document).ready(function () {
+  $(".sec-shop .area-tab .tab-nav .tab-ttl").click(function (e) {
+    console.log("tab")
+    e.preventDefault();
+
+    $(".sec-shop .area-tab .tab-nav .tab-ttl").removeClass("active");
+    $(this).addClass("active");
+
+    const activeTab = $(this).attr("data-tab");
+
+    if (typeof activeTab === "undefined" || activeTab === "") {
+      console.error("Tab is undefined or empty!");
+      return;
+    }
+
+    $(".sec-shop .area-tab .tab-box").hide();
+    $("." + activeTab).fadeIn(200);
+  });
+});
+
+
 // //Menu Button Click
 setTimeout(()=> {
     $("header .menu-btn").click((e) => {
