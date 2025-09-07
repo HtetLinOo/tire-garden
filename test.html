@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>Japan SVG Map</title>
+<style>
+  body { font-family: sans-serif; }
+  .region-box { margin-right:10px; padding:5px 10px; background:#ccc; cursor:pointer; border-radius:4px; display:inline-block; }
+  svg { border:1px solid #ccc; width:600px; }
+  .region { fill:#ccc; stroke:#000; stroke-width:1; cursor:pointer; }
+  .region.active { fill:green; }
+</style>
+</head>
+<body>
+
+<!-- Right side region boxes -->
+<div>
+  <div class="region-box" data-region="hokkaido">北海道</div>
+  <div class="region-box" data-region="tohoku">東北</div>
+  <div class="region-box" data-region="kanto">関東</div>
+  <div class="region-box" data-region="chubu">中部</div>
+  <div class="region-box" data-region="kinki">近畿</div>
+  <div class="region-box" data-region="chugoku">中国</div>
+  <div class="region-box" data-region="shikoku">四国</div>
+  <div class="region-box" data-region="kyushu">九州</div>
+</div>
+
+<!-- SVG Map -->
+<svg viewBox="0 0 600 800">
+  <path id="hokkaido" class="region" d="M80,80 h160 v120 h-160 z"></path>
+  <path id="tohoku" class="region" d="M170,230 h140 v120 h-140 z"></path>
+  <path id="kanto" class="region" d="M220,380 h140 v110 h-140 z"></path>
+  <path id="chubu" class="region" d="M160,520 h160 v120 h-160 z"></path>
+  <path id="kinki" class="region" d="M340,520 h160 v120 h-160 z"></path>
+  <path id="chugoku" class="region" d="M60,520 h80 v120 h-80 z"></path>
+  <path id="shikoku" class="region" d="M140,670 h160 v70 h-160 z"></path>
+  <path id="kyushu" class="region" d="M40,680 h80 v90 h-80 z"></path>
+</svg>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+  $('.region-box').click(function(){
+    var region = $(this).data('region');
+    $('.region').removeClass('active'); // clear previous
+    $('#' + region).addClass('active'); // highlight clicked region
+  });
+
+  // optional: hover highlight
+  $('.region-box').hover(
+    function(){ var region = $(this).data('region'); $('#' + region).addClass('active'); },
+    function(){ var region = $(this).data('region'); $('#' + region).removeClass('active'); }
+  );
+</script>
+
+</body>
+</html>
