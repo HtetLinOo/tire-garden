@@ -36,6 +36,7 @@ Top Page
 }
 
 .top-ttl .shadow-wrap {
+    display: none;
     position: absolute;
     width: 100%;
     height: 100%;
@@ -299,7 +300,7 @@ Top Page
     gap: 10px;
 }
 
-.sec-res .res-left .link-btn-gp li a {
+.sec-res .res-left .link-btn-gp li p {
     display: block;
     border: 2px solid #0C7C34;
     border-radius: 2.2rem;
@@ -424,7 +425,7 @@ Top Page
     transform: translateY(-50%);
 }
 
-.sec-store .area-box-blk .box .city-list li a {
+.sec-store .area-box-blk .box .city-list li .city-name {
     font-size: 1.4rem;
     line-height: 1.6;
     font-weight: 400;
@@ -616,32 +617,22 @@ Top Page
     font-size: 1.4rem;
     font-weight: 500;
     line-height: 1.5;
-    padding: 8px 16px;
+    padding: 10px 15px;
     display: inline-block;
     position: relative;
 }
+.sec-service .view-more a::after {
+    content: "";
+    background: url(/assets/img/top/blue_arrow.png) no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    right: 0;
+    top: 53%;
+    transform: translateY(-50%);
+}
 
-/* @media screen and (max-width: 1024px) {
-    .sec-service .service-list {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 30px;
-    }
-}
-@media screen and (max-width: 600px) {
-    .sec-service {
-        padding: 60px 0;
-    }
-    .sec-service .service-list {
-        grid-template-columns: 1fr;
-        gap: 40px;
-    }
-    .sec-service .service-title {
-        font-size: 2rem;
-    }
-    .sec-service .service-subtitle {
-        font-size: 1.6rem;
-    }
-}
 
 /* Point Section */
 .sec-point {
@@ -649,49 +640,49 @@ Top Page
     background: #fff;
 }
 
-.point-ttl {
-    text-align: center;
+.sec-point .point-ttl {
+    max-width: 719px;
     margin-bottom: 30px;
 }
 
-.point-ttl .sub-ttl {
-    display: block;
-    font-size: 1.8rem;
-    margin-bottom: 20px;
+.sec-point .point-ttl .sub-ttl {
+    font-size: 2.2rem;
+    margin-bottom: 5px;
+    line-height: 1.6;
 }
 
-.point-ttl .main-ttl {
-    font-size: 3.6rem;
+.sec-point .point-ttl .main-ttl {
+    font-size: 4.4rem;
+    line-height: 1.5;
     font-weight: 700;
 }
 
-.point-desc {
-    text-align: center;
+.sec-point .point-desc {
     font-size: 1.6rem;
-    line-height: 1.8;
+    line-height: 1.6;
     margin-bottom: 60px;
 }
 
-.point-list {
+.sec-point .point-list {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 26px 28px;
     margin: 0 auto 60px;
 }
 
-.point-item {
+.sec-point .point-item {
     background: #E7F3E7;
     border: 1px solid #0C7C34;
-    padding: 30px 25px;
+    padding: 35px 30px;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
 }
 
-.point-icon {
-    width: 80px;
-    height: 80px;
+.sec-point .point-icon {
+    width: 114px;
+    height: 114px;
     background: #fff;
     border-radius: 50%;
     display: flex;
@@ -700,28 +691,76 @@ Top Page
     margin-bottom: 20px;
 }
 
-.point-icon img {
-    width: 40px;
-    height: 40px;
+.sec-point .point-icon img {
+    width: 60px;
+    height: 60px;
 }
 
-.point-num {
+.sec-point .point-num {
     color: #0C7C34;
     font-family: "Lato", sans-serif;
     font-weight: 700;
-    font-size: 1.4rem;
+    font-size: 1.9rem;
+    line-height: 1.5;
     margin-bottom: 10px;
+    position: relative;
+    padding: 0 20px;
 }
-
-.point-name {
-    font-size: 1.8rem;
-    font-weight: 700;
-    margin-bottom: 15px;
+.sec-point .point-num::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 2px;
+    height: 25px;
+    background: #000000;
+    transform: translateY(-50%) rotate(-30deg);
 }
-
-.point-text {
+.sec-point .point-num::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 50%;
+    width: 2px;
+    height: 25px;
+    background: #000000;
+    transform: translateY(-50%) rotate(30deg);
+}
+.sec-point .box-txt {
     font-size: 1.4rem;
-    line-height: 1.7;
+    font-weight: 700;
+    line-height: 1.6;
+    color: #0C7C34;
+    padding: 10px 20px;
+    border: 1px solid #0C7C34;
+    border-radius: 6px;
+    background: #fff;
+    position: relative;
+}
+.sec-point .box-txt::after {
+    content: "";
+    background: url(/assets/img/top/green_down_arrow.png) no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+    bottom: -11px;
+    z-index: 10;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 14px;
+    height: 11px;
+}
+
+.sec-point .point-name {
+    font-size: 2.2rem;
+    font-weight: 700;
+    line-height: 1.6;
+   margin: 15px 0;
+}
+
+.sec-point .point-text {
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.6;
 }
 
 /* Pit Service Section */
@@ -795,6 +834,19 @@ Top Page
     color: #226ACC;
     text-decoration: none;
     font-size: 1.4rem;
+    padding-right: 15px;
+    position: relative;
+}
+.sec-pitservice .view-more a::after {
+    content: "";
+    background: url(/assets/img/top/blue_arrow.png) no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    right: 0;
+    top: 60%;
+    transform: translateY(-50%);
 }
 
 .sec-pitservice .safety-blk .card {
@@ -1202,8 +1254,8 @@ Top Page
 .sec-shop .mail-blk {
     max-width: 1072px;
     margin: 0 auto 60px;
-    border-top: 1px solid #0C7C34;
-    border-bottom: 1px solid #0C7C34;
+    border-top: 2px solid #0C7C34;
+    border-bottom: 2px solid #0C7C34;
     padding: 30px 55px;
     display: flex;
     align-items: center;
@@ -1442,7 +1494,7 @@ Top Page
         margin: 0 auto;
     }
 
-    .sec-res .res-left .link-btn-gp li a {
+    .sec-res .res-left .link-btn-gp li p {
         font-size: 1.2rem;
         padding: 6px;
     }
@@ -1619,7 +1671,7 @@ Top Page
         grid-template-columns: repeat(3, 1fr);
         gap: 8px 5px;
     }
-    .sec-store .area-box-blk .box .city-list li a {
+    .sec-store .area-box-blk .box .city-list li .city-name {
         font-size: 1.5rem;
         border: 1px solid #0C7C34;
         border-radius: 18px;
@@ -1658,6 +1710,7 @@ Top Page
     .sec-pitservice .safety-blk .card {
         flex-direction: column;
         padding: 40px 18px 30px;
+        gap: 30px;
     }
     .sec-pitservice .safety-blk .card .left {
         width: 100%;
@@ -1696,9 +1749,45 @@ Top Page
         max-width: 120px;
         font-size: 1.2rem;
     }
+    .sec-pitservice .safety-blk .left .card-txt p {
+        font-size: 1.2rem;
+    }
+    .sec-pitservice .safety-blk .card .right {
+        width: 100%;
+    }
+    .sec-pitservice .safety-blk .right .img {
+        max-width: 177px;
+        margin: 0 auto 30px;
+    }
+    .sec-pitservice .safety-blk .right-box-row p {
+        font-size: 1.5rem;
+    }
+    .sec-pitservice .safety-blk .right-box-row {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "one two"
+        "full full";
+    }
+    .sec-pitservice .safety-blk .right-box-row .one {
+        grid-area: one;
+        max-width: 151px;
+    }
+    .sec-pitservice .safety-blk .right-box-row .two {
+        grid-area: two;
+        max-width: 151px;
+    }
+    .sec-pitservice .safety-blk .right-box-row .full {
+        grid-area: full;
+        max-width: 100%;
+    }
+    .sec-pitservice .safety-blk .left .card-txt {
+        gap: 10px;
+        padding: 5px 20px 5px 20px;
+    }
+
 
     .sec-shop {
-        padding: 60px 0;
+        padding: 0 0 60px 0;
     }
     .sec-shop .area-tab .tab-nav {
         display: grid;
@@ -1733,6 +1822,7 @@ Top Page
     .sec-shop .app-card {
         flex-direction: column;
         gap: 40px;
+        align-items: center;
     }
     .sec-shop .app-logo {
         max-width: 86px;
@@ -1759,13 +1849,110 @@ Top Page
         right: unset;
         bottom: unset;
         flex-direction: column;
+        gap: 5px;
     }
     .sec-shop .app-card .app-right {
         max-width: 243px;
         display: flex;
         flex-direction: row-reverse;
+        gap: 22px;
     }
     .sec-shop .app-card .app-right img {
         max-width: 141px;
+    }
+    .sec-shop .app-btns {
+        gap: 20px;
+    }
+    .sec-shop .app-card .app-right .circle {
+        width: 80px;
+        height: 80px;
+    }
+    .sec-shop .app-card .app-right .circle p {
+        font-size: 1rem;
+    }
+    .sec-shop .mail-blk {
+        padding: 20px 15px;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .sec-shop .mail-blk .mail-img {
+        max-width: 64px;
+    }
+    .sec-shop .mail-blk .mail-left {
+        flex-direction: column;
+    }
+    .sec-shop .mail-blk .mail-logo {
+        gap: 15px;
+    }
+    .sec-shop .mail-blk .mail-logo-ttl {
+        font-size: 2rem;
+    }
+    .sec-shop .mail-blk .mail-txt {
+        font-size: 1.5rem;
+    }
+    .sec-shop .mail-blk .mail-right .email-btn {
+        font-size: 1.5rem;
+        padding: 10px;
+    }
+    .sec-shop .manage-blk .manage-btn-wrapper {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    .sec-shop .manage-blk .manage-btn {
+        padding: 20px;
+    }
+    .sec-shop .manage-blk .manage-btn .left {
+        max-width: 189px;
+    }
+    .sec-shop .manage-blk .manage-btn .left p {
+        font-size: 1.2rem;
+    }
+    .sec-shop .manage-blk .manage-btn .left .sub-ttl {
+        font-size: 1.7rem;
+    }
+    .sec-shop .manage-blk .manage-btn .img {
+        max-width: 29px;
+    }
+
+    .sec-shop .area-body .txt-box.new .txt {
+        font-size: 1.5rem;
+        font-weight: 400;
+    }
+    .sec-shop .area-body .txt-box .txt-name {
+        font-size: 1.2rem;
+    }
+    .sec-shop .area-body .txt-box {
+        max-width: 100%;
+    }
+
+
+    .sec-point .point-num {
+        font-size: 1.2rem;
+    }
+    .sec-point .point-icon {
+        width: 40px;
+        height: 40px;
+    }
+    .sec-point .point-icon img {
+        width: 22px;
+        height: 22px;
+    }
+    .sec-point .point-item {
+        padding: 12px;
+    }
+    .sec-point .box-txt {
+        font-size: 1.2rem;
+        padding: 5px 10px;
+    }
+    .sec-point .point-name {
+        font-size: 1.7rem;
+    }
+    .sec-point .point-text {
+        font-size: 1.2rem;
+        text-align: left;
+    }
+    .sec-store .top-ttl .en-txt {
+        max-width: 240px;
+        margin: 10px auto;
     }
 }

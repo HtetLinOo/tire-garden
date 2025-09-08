@@ -86,43 +86,8 @@ Text align
 /* ===============================
 Color
 =============================== */
-.main-color {
-    /* color: #000; */
-}
-
-.sub-color {
-    color: #24140E;
-}
-
-.b-color {
-    color: #000;
-}
-
-.w-color {
-    color: #fff;
-}
-
-/* ===============================
-Background Color
-=============================== */
-.bg-main {
-    background: #900;
-}
-
-.bg-sub {
-    /* background: #000; */
-}
-
-.bg-b {
-    background: #000;
-}
-
-.bg-w {
-    background: #fff;
-}
-
-.bg-gray {
-    background: #f1f1f1;
+.green {
+    color: #0C7C34;
 }
 
 /* Header */
