@@ -23,6 +23,11 @@ Top Page
     font-weight: 700;
     line-height: 1.5;
 }
+.top-ttl .jp-txt {
+    font-size: 4.8rem;
+    font-weight: 700;
+    line-height: 1.5;
+}
 
 .top-ttl::after {
     content: "";
@@ -250,7 +255,7 @@ Top Page
 }
 
 .sec-res .res-row .res-left {
-    width: 35%;
+    width: 37%;
     max-width: 420px;
     padding-left: 55px;
 }
@@ -291,7 +296,8 @@ Top Page
 }
 
 .sec-res .res-row .res-right {
-    width: 65%;
+    width: 63%;
+    max-width: 683px;
 }
 
 .sec-res .res-left .link-btn-gp {
@@ -348,8 +354,8 @@ Top Page
     content: "";
     background: url(/assets/img/top/white_arrow.png) no-repeat;
     background-size: contain;
-    width: 8px;
-    height: 8px;
+    width: 10px;
+    height: 10px;
     position: absolute;
     right: -20px;
     top: 57%;
@@ -970,6 +976,7 @@ Top Page
     padding: 5px 30px 5px 35px;
     position: relative;
     justify-content: space-between;
+    align-items: center;
 }
 
 .sec-pitservice .safety-blk .left .card-txt::before {
@@ -1265,13 +1272,13 @@ Top Page
 
 .sec-shop .mail-blk .mail-left {
     display: flex;
-    gap: 40px;
+    gap: 17px;
     align-items: center;
 }
 
-.sec-shop .mail-blk .mail-logo {
+.sec-shop .mail-blk .mail-txt-blk {
     display: flex;
-    gap: 17px;
+    gap: 40px;
     align-items: center;
 }
 
@@ -1293,7 +1300,8 @@ Top Page
 }
 
 .sec-shop .mail-blk .mail-right {
-    width: 283px;
+    width: 100%;
+    max-width: 283px;
 }
 
 .sec-shop .mail-blk .mail-right .email-btn {
@@ -1302,6 +1310,19 @@ Top Page
     font-weight: 700;
     line-height: 1.6;
     padding: 15px;
+    text-align: center;
+    position: relative;
+}
+.sec-shop .mail-blk .mail-right .email-btn::after {
+    content: "";
+    background: url(/assets/img/top/black_arrow.png) no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+    right: 22px;
+    top: 52%;
+    width: 10px;
+    height: 10px;
+    transform: translateY(-50%);
 }
 
 .sec-shop .manage-blk .manage-btn-wrapper {
@@ -1344,7 +1365,8 @@ Top Page
         font-size: 1.5rem;
     }
 
-    .top-ttl .en-txt {
+    .top-ttl .en-txt,
+    .top-ttl .jp-txt  {
         font-size: 3rem;
         line-height: 1.2;
     }
@@ -1365,6 +1387,7 @@ Top Page
 
     .sec-mv .mv-blk .mv-img img {
         min-height: 370px;
+        object-fit: cover;
     }
 
     .sec-mv .mv-blk .mv-txt-blk {
@@ -1373,10 +1396,12 @@ Top Page
 
     .sec-mv .mv-blk .mv-txt h3 {
         font-size: 3.6rem;
+        padding-bottom: 15px;
     }
 
     .sec-mv .mv-blk .mv-txt p {
         font-size: 1.4rem;
+        padding-top: 15px;
     }
 
 
@@ -1466,8 +1491,6 @@ Top Page
     .sec-res .res-row .res-left {
         width: 100%;
         padding-left: 0;
-        max-width: 245px;
-        margin: 0 auto;
     }
 
     .sec-res .res-row .res-right {
@@ -1486,6 +1509,8 @@ Top Page
 
     .sec-res .res-row .res-left .res-ttl {
         padding: 15px 0;
+        max-width: 245px;
+        margin: 0 auto;
     }
 
     .sec-res .res-left .link-btn-gp {
@@ -1578,9 +1603,10 @@ Top Page
         padding: 60px 0;
     }
     .sec-maintain .maintain-list {
+        max-width: 345px;
         grid-template-columns: repeat(2, 1fr);
         gap: 30px 23px;
-        margin-bottom: 40px;
+        margin: 0 auto 40px;
     }
     .sec-maintain .maintain-item .maintain-cat {
         min-width: 80px;
@@ -1603,7 +1629,8 @@ Top Page
         padding: 60px 0;
     }
     .sec-service .service-list {
-        margin-top: 10px;
+        max-width: 345px;
+        margin: 10px auto 0;
         grid-template-columns: repeat(2 , 1fr);
         gap: 8px;
     }
@@ -1648,8 +1675,14 @@ Top Page
         margin-bottom: 30px;
     }
     .sec-point .point-list {
+        max-width: 345px;
+        margin: 0 auto 40px;
         grid-template-columns: repeat(2, 1fr);
         gap: 8px 7px;
+    }
+    .sec-point .point-more-wrap .more-btn {
+        max-width: 303px;
+        padding: 18px 10px;
     }
 
     .point-item {
@@ -1658,6 +1691,10 @@ Top Page
 
     .sec-store {
         padding: 60px 0;
+    }
+    .sec-store .area-box-blk .box {
+        max-width: 345px;
+        margin: 0 auto;
     }
     .sec-store .map-blk .row {
         grid-template-columns: 1fr;
@@ -1711,9 +1748,12 @@ Top Page
         flex-direction: column;
         padding: 40px 18px 30px;
         gap: 30px;
+        max-width: 345px;
+        margin: 0 auto;
     }
     .sec-pitservice .safety-blk .card .left {
         width: 100%;
+        max-width: 100%;
     }
     .sec-pitservice .safety-blk .card-ttl p {
         font-size: 1.5rem;
@@ -1749,6 +1789,12 @@ Top Page
         max-width: 120px;
         font-size: 1.2rem;
     }
+    .sec-pitservice .safety-blk .card-tire ul li:nth-child(odd) {
+        margin: 0 0 0 auto;
+    }
+    .sec-pitservice .safety-blk .card-tire ul li:nth-child(even) {
+        margin: 0 auto 0 0;
+    }
     .sec-pitservice .safety-blk .left .card-txt p {
         font-size: 1.2rem;
     }
@@ -1761,6 +1807,7 @@ Top Page
     }
     .sec-pitservice .safety-blk .right-box-row p {
         font-size: 1.5rem;
+        padding: 12px;
     }
     .sec-pitservice .safety-blk .right-box-row {
         display: grid;
@@ -1782,12 +1829,20 @@ Top Page
     }
     .sec-pitservice .safety-blk .left .card-txt {
         gap: 10px;
-        padding: 5px 20px 5px 20px;
+        padding: 5px 30px 5px 35px;
     }
 
 
     .sec-shop {
         padding: 0 0 60px 0;
+    }
+    .sec-shop .area-tab {
+        max-width: 345px;
+        margin: 0 auto;
+        padding-bottom: 60px;
+    }
+    .sec-shop .area-tab .tab-box {
+        margin-bottom: 40px;
     }
     .sec-shop .area-tab .tab-nav {
         display: grid;
@@ -1803,7 +1858,7 @@ Top Page
         font-size: 1.2rem;
         padding: 8px 10px;
         max-width: 76px;
-        margin: 0 1px
+        margin: 2px 1px
     }
     .sec-shop .area-body .shop-list {
         grid-template-columns: 1fr;
@@ -1814,6 +1869,8 @@ Top Page
 
     .sec-shop .app-blk {
         padding: 20px;
+        max-width: 345px;
+        margin: 0 auto 60px;
     }
     .sec-shop .logo-blk {
         gap: 15px;
@@ -1871,6 +1928,7 @@ Top Page
         font-size: 1rem;
     }
     .sec-shop .mail-blk {
+        max-width: 345px;
         padding: 20px 15px;
         flex-direction: column;
         gap: 20px;
@@ -1879,10 +1937,13 @@ Top Page
         max-width: 64px;
     }
     .sec-shop .mail-blk .mail-left {
-        flex-direction: column;
-    }
-    .sec-shop .mail-blk .mail-logo {
         gap: 15px;
+        align-items: flex-start;
+    }
+    .sec-shop .mail-blk .mail-txt-blk {
+        flex-direction: column;
+        gap: 5px;
+        align-items: flex-start;
     }
     .sec-shop .mail-blk .mail-logo-ttl {
         font-size: 2rem;
@@ -1890,11 +1951,16 @@ Top Page
     .sec-shop .mail-blk .mail-txt {
         font-size: 1.5rem;
     }
+    .sec-shop .mail-blk .mail-right {
+        max-width: 253px;
+    }
     .sec-shop .mail-blk .mail-right .email-btn {
         font-size: 1.5rem;
         padding: 10px;
     }
     .sec-shop .manage-blk .manage-btn-wrapper {
+        max-width: 345px;
+        margin: 0 auto;
         grid-template-columns: 1fr;
         gap: 20px;
     }
@@ -1923,6 +1989,9 @@ Top Page
     }
     .sec-shop .area-body .txt-box {
         max-width: 100%;
+    }
+    .sec-shop .mail-blk .mail-right .email-btn::after {
+        right: 17px;
     }
 
 
